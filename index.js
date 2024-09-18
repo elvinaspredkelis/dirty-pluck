@@ -14,10 +14,7 @@ export function pluck(object, query, delimiter = DELIMITER) {
   let values = [object];
 
   for (const key of keys) {
-    values = values.flatMap((item) => {
-      const value = item[key];
-      return Array.isArray(value) ? value : [value];
-    });
+    values = values.flatMap((item) => item[key] ?? []);
   }
   return values;
 }

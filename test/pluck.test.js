@@ -73,4 +73,13 @@ test("pluck deeply nested objects", () => {
   ]);
 });
 
+// Sub-object tests
+test("pluck sub-object number", () => {
+  const subobject = pluck(OBJECT, "nested.object_array");
+  const result = pluck(subobject, "number");
+
+  assert.instance(result, Array);
+  assert.equal(result, [1, 2, 3]);
+});
+
 test.run();
