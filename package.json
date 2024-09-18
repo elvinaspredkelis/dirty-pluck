@@ -4,7 +4,12 @@
   "version": "0.1.0",
   "description": "Tiny library for plucking key values from JSON",
   "main": "index.js",
-  "author": "",
+  "contributors": [
+    {
+      "name": "Elvinas Predkelis",
+      "url": "https://predkelis.com"
+    }
+  ],
   "license": "MIT",
   "scripts": {
     "test": "uvu test"
