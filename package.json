@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "dirty-pluck",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Tiny library for plucking key values from JSON, but in a dirty way.",
   "main": "index.js",
   "contributors": [
