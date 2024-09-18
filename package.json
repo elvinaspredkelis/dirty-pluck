@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "dirty-pluck",
+  "version": "0.1.0",
+  "description": "Tiny library for plucking key values from JSON",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "uvu test"
+  },
+  "devDependencies": {
+    "uvu": "^0.5.6"
+  }
+}
