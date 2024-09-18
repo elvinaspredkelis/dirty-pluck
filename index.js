@@ -11,7 +11,7 @@ const DELIMITER = ".";
 
 export function pluck(object, query, delimiter = DELIMITER) {
   const keys = query.split(delimiter);
-  let values = [object];
+  let values = Array.isArray(object) ? object : [object];
 
   for (const key of keys) {
     values = values.flatMap((item) => item[key] ?? []);
