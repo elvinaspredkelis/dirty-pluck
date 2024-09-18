@@ -1,6 +1,13 @@
 # dirty-pluck
 
-## Introduction
+<p>
+  <a href="https://www.npmjs.com/package/dirty-pluck">
+  <img alt="NPM Version" src="https://img.shields.io/npm/v/dirty-pluck?logo=npm&color=38C160">
+  </a>
+  <a href="https://bundlephobia.com/package/dirty-pluck">
+    <img alt="NPM Bundle Size" src="https://img.shields.io/bundlephobia/minzip/dirty-pluck?label=bundle%20size&logo=npm">
+  </a>
+</p>
 
 `dirty-pluck` is a tiny and straight-forward library for plucking JSON values. It's great for adapters of all sorts.
 
