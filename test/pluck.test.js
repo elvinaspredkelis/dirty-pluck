@@ -114,6 +114,22 @@ test("pluck deeply nested objects", () => {
   ]);
 });
 
+test("return same object in array if empty expression", () => {
+  const object = { foo: "bar" };
+  const result = pluck(object, "");
+
+  assert.instance(result, Array);
+  assert.equal(result, [object]);
+});
+
+test("return same array if empty expression", () => {
+  const array = [{ foo: "bar" }, { foo: "bar" }, { foo: "bar" }];
+  const result = pluck(array, "");
+
+  assert.instance(result, Array);
+  assert.equal(result, array);
+});
+
 // Chained item tests
 test("pluck chained", () => {
   const items = pluck(OBJECT, "data");
